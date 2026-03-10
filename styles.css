@@ -331,11 +331,18 @@ h1{
 .big-link a{font-size:18px; font-weight:800; color: var(--sand)}
 .divider{height:1px; background: var(--line); margin: 14px 0}
 
-.socials{display:grid; gap:10px}
+.socials{
+  display:grid;
+  gap:12px;
+  margin-top:12px;
+}
+
 .social{
-  display:flex; gap:10px; align-items:center;
+  display:flex;
+  gap:10px;
+  align-items:center;
   padding:12px;
-  border-radius: 14px;
+  border-radius:14px;
   border:1px solid var(--line);
   background: rgba(255,255,255,.03);
 }
