@@ -85,8 +85,24 @@ a:hover{opacity:.92}
 }
 
 main{max-width:var(--max); margin:0 auto; padding: 0 18px}
-.hero{padding: 52px 0 22px}
+.hero{
+  padding: 52px 0 22px;
+  background-image: url("crowd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+}
+
 .hero-inner{
+  position:relative;
+  z-index:2;
   display:grid;
   grid-template-columns: 1.15fr .85fr;
   gap:26px;
