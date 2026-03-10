@@ -213,7 +213,10 @@ h1{
   background: rgba(255,255,255,.03);
   color:var(--muted);
 }
-.section{padding: 34px 0}
+.section{
+  padding:54px 0;
+}
+
 #about{
   max-width:1200px;
   margin:0 auto;
@@ -222,21 +225,22 @@ h1{
 
 #about h2{
   margin:0 0 12px;
-  font-size:26px;
-  letter-spacing:-.01em;
+  font-size:clamp(30px,3vw,40px);
+  letter-spacing:-.02em;
 }
 
 #about p{
   margin:0 0 22px;
   color:var(--muted);
-  line-height:1.6;
+  line-height:1.7;
   max-width:720px;
 }
 
 #about .grid-2{
   display:grid;
-  gap:14px;
-  margin-top:16px;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:18px;
 }
 .section-head h2{margin:0 0 8px; font-size: 26px; letter-spacing:-.01em}
 .section-head p{margin:0; color:var(--muted); line-height:1.6}
