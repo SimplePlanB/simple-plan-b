@@ -423,20 +423,24 @@ h1{
 }
 
 .gallery-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-top: 14px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+  margin-top:14px;
+}
+
+.gallery-grid a{
+  display:block;
 }
 
 .gallery-img{
-  width: 100%;
-  display: block;
-  border-radius: 12px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width:100%;
+  display:block;
+  border-radius:12px;
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .gallery-img:hover{
-  transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  transform:scale(1.03);
+  box-shadow:0 10px 25px rgba(0,0,0,0.35);
 }
