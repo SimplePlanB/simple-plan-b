@@ -329,7 +329,7 @@ h1 {
   margin: 0 auto 38px auto;
   font-size: 1.08rem;
   line-height: 1.7;
-  color: rgba(255,255,255,.82);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .info-grid {
@@ -351,11 +351,11 @@ h1 {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  text-align: left;
 }
 
 .info-card h3,
-.booking-card h3,
-.event-gallery h3 {
+.booking-card h3 {
   margin: 0 0 12px;
 }
 
@@ -388,7 +388,6 @@ h1 {
 .booking-card {
   max-width: 760px;
   margin: 0 auto;
-  text-align: left;
 }
 
 .big-link a {
@@ -429,8 +428,29 @@ h1 {
   border-color: rgba(183, 255, 42, 0.35);
 }
 
-.event-gallery {
+#gallery .section-inner {
+  text-align: center;
+}
+
+#gallery .section-lead {
+  margin: 0 auto 38px auto;
+}
+
+#gallery .event-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 12px;
+}
+
+#gallery .event-gallery h3 {
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+#gallery .event-gallery p {
+  margin: 0 0 16px;
+  text-align: center;
 }
 
 .event-gallery + .divider {
@@ -438,6 +458,7 @@ h1 {
 }
 
 .gallery-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
