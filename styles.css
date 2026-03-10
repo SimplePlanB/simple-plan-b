@@ -408,10 +408,9 @@ h1{
   }
   .logo{max-width: 420px}
   .pricing{grid-template-columns: 1fr;}
-  .grid-2{grid-template-columns: 1fr}
-  #about .grid-2{grid-template-columns:1fr}
-  .mini{grid-template-columns: 1fr}
-  #about .grid-2{grid-template-columns:1fr}
+.grid-2{grid-template-columns: 1fr}
+#about .grid-2{grid-template-columns:1fr}
+.mini{grid-template-columns: 1fr}
   .nav{display:none}
   .menu-btn{display:block}
 }
