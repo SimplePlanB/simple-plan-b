@@ -190,13 +190,17 @@ h1{
   display:block;
   margin: 0 auto;
   border-radius: 22px;
+  filter: drop-shadow(0 0 30px rgba(255,42,42,.35));
 }
 .ring{
   position:absolute;
   inset: 12px;
   border-radius: 26px;
   border: 1px solid rgba(255,42,42,.35);
-  box-shadow: inset 0 0 0 1px rgba(183,255,42,.14);
+  box-shadow:
+    inset 0 0 0 1px rgba(183,255,42,.14),
+    0 0 40px rgba(255,42,42,.18),
+    0 0 80px rgba(183,255,42,.12);
   pointer-events:none;
 }
 .note{
@@ -207,6 +211,7 @@ h1{
   background: rgba(255,255,255,.03);
   color:var(--muted);
 }
+.section{padding: 34px 0}
 #about{
   max-width:1200px;
   margin:0 auto;
@@ -228,11 +233,9 @@ h1{
 
 #about .grid-2{
   display:grid;
-  grid-template-columns:1fr 1fr;
   gap:14px;
   margin-top:16px;
 }
-.section{padding: 34px 0}
 .section-head h2{margin:0 0 8px; font-size: 26px; letter-spacing:-.01em}
 .section-head p{margin:0; color:var(--muted); line-height:1.6}
 
@@ -398,6 +401,7 @@ h1{
   .logo{max-width: 420px}
   .pricing{grid-template-columns: 1fr;}
   .grid-2{grid-template-columns: 1fr}
+  #about .grid-2{grid-template-columns:1fr}
   .mini{grid-template-columns: 1fr}
   #about .grid-2{grid-template-columns:1fr}
   .nav{display:none}
