@@ -572,16 +572,63 @@ h1 {
 }
 
 .merch-info {
-  margin-top: 26px;
+  margin-top: 30px;
   display: grid;
   gap: 10px;
-  max-width: 760px;
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
+  padding: 28px 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .merch-info p {
   margin: 0;
+}
+
+.price {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--sand);
+  margin-bottom: 8px;
+  text-shadow:
+    0 0 10px rgba(255, 209, 160, 0.2),
+    0 0 20px rgba(255, 42, 42, 0.1);
+}
+
+.merch-desc {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.merch-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  text-align: left;
+}
+
+.merch-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.snake {
+  font-size: 14px;
+  filter: brightness(2);
+  flex: 0 0 auto;
 }
 
 .socials {
@@ -714,11 +761,16 @@ h1 {
     max-width: 100%;
   }
 
+  .merch-info {
+    padding: 22px 18px;
+  }
+
   .footer {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
 /* FORCE merch images to fully fit inside boxes */
 .merch-grid-small {
   display: grid !important;
