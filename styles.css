@@ -611,24 +611,30 @@ h1 {
 .merch-features {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: grid;
-  gap: 10px;
-  text-align: left;
+  gap: 12px;
+  max-width: 430px;
 }
 
 .merch-features li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 22px 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: 0.98rem;
   line-height: 1.6;
+  text-align: left;
 }
 
-.snake {
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
-  filter: brightness(2);
-  flex: 0 0 auto;
+  color: var(--sand);
+  width: 22px;
+  flex: 0 0 22px;
 }
 
 .socials {
