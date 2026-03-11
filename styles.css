@@ -719,3 +719,27 @@ h1 {
     align-items: flex-start;
   }
 }
+/* FORCE merch images to fully fit inside boxes */
+.merch-grid-small {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  margin-top: 24px !important;
+  align-items: stretch !important;
+}
+
+.merch-grid-small .merch-img {
+  width: 100% !important;
+  height: 340px !important;
+  display: block !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  border-radius: 18px !important;
+  background: transparent !important;
+}
+
+@media (max-width: 700px) {
+  .merch-grid-small .merch-img {
+    height: 260px !important;
+  }
+}
