@@ -964,3 +964,12 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+.member-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.member-info li {
+  list-style: none;
+}
