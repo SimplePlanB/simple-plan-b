@@ -1003,3 +1003,6 @@ h1 {
   box-shadow:
     0 0 50px rgba(255,123,84,.25);
 }
+.band-member + .band-member {
+  margin-top: 60px;
+}
