@@ -993,3 +993,12 @@ h1 {
 .band-member + .band-member {
   margin-top: 25px;
 }
+.member-info a {
+  color: #ff7b54;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.member-info a:hover {
+  text-decoration: underline;
+}
