@@ -1137,3 +1137,114 @@ h1 {
     position: static;
   }
 }
+.meet-band-section {
+  padding: 90px 20px;
+  position: relative;
+}
+
+.neon-heading {
+  text-align: center;
+  font-size: clamp(3rem, 8vw, 7rem);
+  margin-bottom: 35px;
+  color: #ff4f7b;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 8px #ff4f7b,
+    0 0 18px #ff4f7b,
+    0 0 35px #ff2f5f,
+    0 0 65px #ff2f5f;
+}
+
+.meet-band-wrap {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.meet-band-img {
+  width: 100%;
+  display: block;
+  filter: drop-shadow(0 0 35px rgba(255, 79, 123, 0.18));
+}
+
+.band-name {
+  position: absolute;
+  z-index: 3;
+  font-size: clamp(1.8rem, 4vw, 4rem);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.name-kate {
+  top: 3%;
+  left: 8%;
+  color: #ffe66d;
+  text-shadow:
+    0 0 8px #ffe66d,
+    0 0 18px #ffe66d,
+    0 0 35px #ffb703;
+}
+
+.name-court {
+  top: 3%;
+  right: 8%;
+  color: #ff4f7b;
+  text-shadow:
+    0 0 8px #ff4f7b,
+    0 0 18px #ff4f7b,
+    0 0 35px #ff2f5f;
+}
+
+.name-kat {
+  bottom: 5%;
+  left: 9%;
+  color: #7ecbff;
+  text-shadow:
+    0 0 8px #7ecbff,
+    0 0 18px #7ecbff,
+    0 0 35px #2aa8ff;
+}
+
+.name-reid {
+  bottom: 5%;
+  right: 9%;
+  color: #5cff8d;
+  text-shadow:
+    0 0 8px #5cff8d,
+    0 0 18px #5cff8d,
+    0 0 35px #21d05f;
+}
+
+@media (max-width: 700px) {
+  .meet-band-section {
+    padding: 70px 10px;
+  }
+
+  .band-name {
+    font-size: 1.4rem;
+  }
+
+  .name-kate {
+    top: 6%;
+    left: 4%;
+  }
+
+  .name-court {
+    top: 6%;
+    right: 4%;
+  }
+
+  .name-kat {
+    bottom: 7%;
+    left: 4%;
+  }
+
+  .name-reid {
+    bottom: 7%;
+    right: 4%;
+  }
+}
