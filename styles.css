@@ -1009,3 +1009,131 @@ h1 {
   margin: 40px auto 0;
   border-radius: 24px;
 }
+/* =========================
+   MOBILE FRIENDLY FIXES
+   ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 18px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 60px 18px 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-grid,
+  .about-grid,
+  .booking-grid,
+  .merch-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card,
+  .card,
+  .show-card,
+  .band-member {
+    width: 100%;
+  }
+
+  .shows-grid,
+  .gallery-grid,
+  .member-photos,
+  .merch-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-band-photo,
+  .band-header-photo {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .member-photos img,
+  .gallery-grid img,
+  .merch-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .btn-row {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .section {
+    padding: 45px 0;
+  }
+
+  .topbar {
+    position: static;
+  }
+}
