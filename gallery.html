@@ -1,58 +1,105 @@
-<main id="top">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Plan B | Gallery</title>
 
-<section id="gallery" class="section">
-  <div class="section-inner">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body>
+  <div class="bg-noise" aria-hidden="true"></div>
 
-    <h2>Gallery</h2>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Simple Plan B home">
+      <span class="dot"></span>
+      <span class="brand-text">SIMPLE PLAN B</span>
+    </a>
 
-    <p class="section-lead">
-      Live photos and videos from Simple Plan B shows and events.
-    </p>
+    <nav class="nav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#booking">Booking</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#merch">Merch</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="pill" href="index.html#socials">Socials</a>
+    </nav>
+  </header>
 
-    <div class="gallery-section">
-      <h3>Hi-Wire Pride Recap</h3>
-      <p>Highlights from our Pride show at Hi-Wire Brewing.</p>
+  <main>
+    <section class="section">
+      <div class="card">
+        <h1>Gallery</h1>
+        <p class="muted">Live photos from Simple Plan B shows and events.</p>
 
-      <iframe
-        src="https://drive.google.com/file/d/1k13CUNE4GoNiyk6L-KgpUcppovkv71GM/preview"
-        width="100%"
-        height="600"
-        allow="autoplay">
-      </iframe>
-    </div>
+        <div class="divider"></div>
 
-    <div class="event-gallery">
-      <h3>Eagles Dare — Wilmington, NC</h3>
-      <p class="muted">Live show at Eagles Dare</p>
+        <div class="event-gallery">
+          <h3>Eagles Dare — Wilmington, NC</h3>
+          <p class="muted">Live show at Eagles Dare</p>
 
-      <div class="gallery-grid">
+          <div class="gallery-grid">
+            <a href="eaglesdare-1.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-1.jpg.jpg" alt="Simple Plan B live at Eagles Dare 1" class="gallery-img"></a>
+            <a href="eaglesdare-2.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-2.jpg.jpg" alt="Simple Plan B live at Eagles Dare 2" class="gallery-img"></a>
+            <a href="eaglesdare-3.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-3.jpg.jpg" alt="Simple Plan B live at Eagles Dare 3" class="gallery-img"></a>
+            <a href="eaglesdare-4.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-4.jpg.jpg" alt="Simple Plan B live at Eagles Dare 4" class="gallery-img"></a>
+            <a href="eaglesdare-5.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-5.jpg.jpg" alt="Simple Plan B live at Eagles Dare 5" class="gallery-img"></a>
+            <a href="eaglesdare-6.jpg.JPG" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-6.jpg.JPG" alt="Simple Plan B live at Eagles Dare 6" class="gallery-img"></a>
+            <a href="eaglesdare-7.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-7.jpg.jpg" alt="Simple Plan B live at Eagles Dare 7" class="gallery-img"></a>
+            <a href="eaglesdare-8.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-8.jpg.jpg" alt="Simple Plan B live at Eagles Dare 8" class="gallery-img"></a>
+            <a href="eaglesdare-9.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-9.jpg.jpg" alt="Simple Plan B live at Eagles Dare 9" class="gallery-img"></a>
+            <a href="eaglesdare-10.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-10.jpg.jpg" alt="Simple Plan B live at Eagles Dare 10" class="gallery-img"></a>
+            <a href="eaglesdare-11.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-11.jpg.jpg" alt="Simple Plan B live at Eagles Dare 11" class="gallery-img"></a>
+            <a href="eaglesdare-12.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-12.jpg.jpg" alt="Simple Plan B live at Eagles Dare 12" class="gallery-img"></a>
+            <a href="eaglesdare-13.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-13.jpg.jpg" alt="Simple Plan B live at Eagles Dare 13" class="gallery-img"></a>
+            <a href="eaglesdare-14.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-14.jpg.jpg" alt="Simple Plan B live at Eagles Dare 14" class="gallery-img"></a>
+            <a href="eaglesdare-15.jpg.jpg" class="glightbox" data-gallery="eaglesdare"><img src="eaglesdare-15.jpg.jpg" alt="Simple Plan B live at Eagles Dare 15" class="gallery-img"></a>
+          </div>
+        </div>
 
-        <!-- KEEP ALL EAGLES DARE PHOTOS HERE -->
+        <div class="divider"></div>
 
+        <div class="event-gallery">
+          <h3>Halloween Show</h3>
+          <p class="muted">Halloween performance</p>
+
+          <div class="gallery-grid">
+            <a href="halloweenshow1.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow1.jpg.jpg" alt="Simple Plan B Halloween show 1" class="gallery-img"></a>
+            <a href="halloweenshow2.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow2.jpg.jpg" alt="Simple Plan B Halloween show 2" class="gallery-img"></a>
+            <a href="halloweenshow3.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow3.jpg.jpg" alt="Simple Plan B Halloween show 3" class="gallery-img"></a>
+            <a href="halloweenshow4.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow4.jpg.jpg" alt="Simple Plan B Halloween show 4" class="gallery-img"></a>
+            <a href="halloweenshow5.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow5.jpg.jpg" alt="Simple Plan B Halloween show 5" class="gallery-img"></a>
+            <a href="halloweenshow6.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow6.jpg.jpg" alt="Simple Plan B Halloween show 6" class="gallery-img"></a>
+            <a href="halloweenshow7.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow7.jpg.jpg" alt="Simple Plan B Halloween show 7" class="gallery-img"></a>
+            <a href="halloweenshow8.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow8.jpg.jpg" alt="Simple Plan B Halloween show 8" class="gallery-img"></a>
+            <a href="halloweenshow9.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow9.jpg.jpg" alt="Simple Plan B Halloween show 9" class="gallery-img"></a>
+            <a href="halloweenshow10.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow10.jpg.jpg" alt="Simple Plan B Halloween show 10" class="gallery-img"></a>
+            <a href="halloweenshow11.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow11.jpg.jpg" alt="Simple Plan B Halloween show 11" class="gallery-img"></a>
+            <a href="halloweenshow12.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow12.jpg.jpg" alt="Simple Plan B Halloween show 12" class="gallery-img"></a>
+            <a href="halloweenshow13.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow13.jpg.jpg" alt="Simple Plan B Halloween show 13" class="gallery-img"></a>
+            <a href="halloweenshow14.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow14.jpg.jpg" alt="Simple Plan B Halloween show 14" class="gallery-img"></a>
+            <a href="halloweenshow15.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow15.jpg.jpg" alt="Simple Plan B Halloween show 15" class="gallery-img"></a>
+            <a href="halloweenshow16.jpg.jpg" class="glightbox" data-gallery="halloween"><img src="halloweenshow16.jpg.jpg" alt="Simple Plan B Halloween show 16" class="gallery-img"></a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="divider"></div>
-
-    <div class="event-gallery">
-      <h3>Halloween Show</h3>
-      <p class="muted">Halloween performance</p>
-
-      <div class="gallery-grid">
-
-        <!-- KEEP ALL HALLOWEEN PHOTOS HERE -->
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div>© <span id="year"></span> Simple Plan B</div>
-  <div class="footer-right">
-    <a href="#top">Back to top ↑</a>
-  </div>
-</footer>
-
-</main>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+      draggable: true,
+      openEffect: 'zoom',
+      closeEffect: 'fade'
+    });
+  </script>
+</body>
+</html>
