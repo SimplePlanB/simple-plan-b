@@ -1138,113 +1138,135 @@ h1 {
   }
 }
 .meet-band-section {
-  padding: 90px 20px;
-  position: relative;
+  padding: 100px 20px;
+  background: radial-gradient(circle at center, rgba(255, 85, 120, 0.08), transparent 55%);
 }
 
 .neon-heading {
   text-align: center;
-  font-size: clamp(3rem, 8vw, 7rem);
-  margin-bottom: 35px;
-  color: #ff4f7b;
-  letter-spacing: 2px;
+  font-size: clamp(4.5rem, 10vw, 9rem);
+  line-height: 1;
+  margin-bottom: 45px;
+  color: #ff6b35;
   text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
   text-shadow:
-    0 0 8px #ff4f7b,
-    0 0 18px #ff4f7b,
-    0 0 35px #ff2f5f,
-    0 0 65px #ff2f5f;
+    0 0 8px #ff6b35,
+    0 0 18px #ff6b35,
+    0 0 35px #ff3d00,
+    0 0 70px #ff3d00;
 }
 
 .meet-band-wrap {
   position: relative;
-  max-width: 1300px;
+  max-width: 1350px;
   margin: 0 auto;
+  padding: 95px 60px 80px;
 }
 
 .meet-band-img {
   width: 100%;
   display: block;
-  filter: drop-shadow(0 0 35px rgba(255, 79, 123, 0.18));
+  filter: drop-shadow(0 0 45px rgba(255, 107, 53, 0.22));
 }
 
 .band-name {
   position: absolute;
-  z-index: 3;
-  font-size: clamp(1.8rem, 4vw, 4rem);
+  z-index: 5;
+  font-size: clamp(2.2rem, 5vw, 5.25rem);
   font-weight: 900;
   font-style: italic;
-  letter-spacing: 2px;
   text-transform: uppercase;
+  letter-spacing: 3px;
   pointer-events: none;
+  line-height: 1;
 }
 
+/* top left */
 .name-kate {
-  top: 3%;
-  left: 8%;
-  color: #ffe66d;
+  top: 18px;
+  left: 130px;
+  color: #ffe45e;
   text-shadow:
-    0 0 8px #ffe66d,
-    0 0 18px #ffe66d,
-    0 0 35px #ffb703;
+    0 0 8px #ffe45e,
+    0 0 20px #ffe45e,
+    0 0 45px #ffb703,
+    0 0 75px #ff8c00;
 }
 
+/* top right */
 .name-court {
-  top: 3%;
-  right: 8%;
-  color: #ff4f7b;
+  top: 18px;
+  right: 150px;
+  color: #ff4f8b;
   text-shadow:
-    0 0 8px #ff4f7b,
-    0 0 18px #ff4f7b,
-    0 0 35px #ff2f5f;
+    0 0 8px #ff4f8b,
+    0 0 20px #ff4f8b,
+    0 0 45px #ff006e,
+    0 0 75px #ff006e;
 }
 
+/* bottom left */
 .name-kat {
-  bottom: 5%;
-  left: 9%;
-  color: #7ecbff;
+  bottom: 18px;
+  left: 150px;
+  color: #68d8ff;
   text-shadow:
-    0 0 8px #7ecbff,
-    0 0 18px #7ecbff,
-    0 0 35px #2aa8ff;
+    0 0 8px #68d8ff,
+    0 0 20px #68d8ff,
+    0 0 45px #0096ff,
+    0 0 75px #0077ff;
 }
 
+/* bottom right */
 .name-reid {
-  bottom: 5%;
-  right: 9%;
+  bottom: 18px;
+  right: 160px;
   color: #5cff8d;
   text-shadow:
     0 0 8px #5cff8d,
-    0 0 18px #5cff8d,
-    0 0 35px #21d05f;
+    0 0 20px #5cff8d,
+    0 0 45px #00d26a,
+    0 0 75px #00b050;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .meet-band-section {
     padding: 70px 10px;
   }
 
+  .neon-heading {
+    font-size: clamp(3rem, 13vw, 5rem);
+    margin-bottom: 20px;
+  }
+
+  .meet-band-wrap {
+    padding: 55px 10px 55px;
+  }
+
   .band-name {
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 7vw, 2.4rem);
+    letter-spacing: 1px;
   }
 
   .name-kate {
-    top: 6%;
-    left: 4%;
+    top: 10px;
+    left: 20px;
   }
 
   .name-court {
-    top: 6%;
-    right: 4%;
+    top: 10px;
+    right: 20px;
   }
 
   .name-kat {
-    bottom: 7%;
-    left: 4%;
+    bottom: 10px;
+    left: 25px;
   }
 
   .name-reid {
-    bottom: 7%;
-    right: 4%;
+    bottom: 10px;
+    right: 25px;
   }
 }
