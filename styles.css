@@ -1138,135 +1138,120 @@ h1 {
   }
 }
 .meet-band-section {
-  padding: 100px 20px;
-  background: radial-gradient(circle at center, rgba(255, 85, 120, 0.08), transparent 55%);
+  padding: 95px 20px 110px;
+  background:
+    radial-gradient(circle at center, rgba(255, 123, 84, 0.08), transparent 58%),
+    #07080b;
 }
 
-.neon-heading {
+.meet-band-title {
   text-align: center;
-  font-size: clamp(4.5rem, 10vw, 9rem);
+  font-size: clamp(3.5rem, 8vw, 7.5rem);
   line-height: 1;
-  margin-bottom: 45px;
-  color: #ff6b35;
+  margin-bottom: 38px;
+  color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 900;
   text-shadow:
-    0 0 8px #ff6b35,
-    0 0 18px #ff6b35,
-    0 0 35px #ff3d00,
-    0 0 70px #ff3d00;
+    0 0 8px rgba(255,255,255,.75),
+    0 0 22px rgba(255,123,84,.85),
+    0 0 48px rgba(255,80,40,.55);
 }
 
-.meet-band-wrap {
+.meet-band-photo-wrap {
   position: relative;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 95px 60px 80px;
+  padding: 70px 35px 75px;
 }
 
-.meet-band-img {
+.meet-band-photo {
   width: 100%;
   display: block;
-  filter: drop-shadow(0 0 45px rgba(255, 107, 53, 0.22));
+  filter:
+    drop-shadow(0 0 30px rgba(255, 123, 84, 0.16))
+    drop-shadow(0 28px 50px rgba(0, 0, 0, 0.6));
 }
 
-.band-name {
+.member-label {
   position: absolute;
   z-index: 5;
-  font-size: clamp(2.2rem, 5vw, 5.25rem);
+  font-family: "Impact", "Arial Black", sans-serif;
+  font-size: clamp(1.7rem, 4vw, 4.1rem);
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  color: #fff7ef;
   pointer-events: none;
-  line-height: 1;
+  -webkit-text-stroke: 1px rgba(255, 123, 84, 0.8);
+  text-shadow:
+    0 0 6px rgba(255,255,255,.65),
+    0 0 14px rgba(255,123,84,.9),
+    0 0 32px rgba(255,80,40,.7);
 }
 
-/* top left */
-.name-kate {
-  top: 18px;
-  left: 130px;
-  color: #ffe45e;
-  text-shadow:
-    0 0 8px #ffe45e,
-    0 0 20px #ffe45e,
-    0 0 45px #ffb703,
-    0 0 75px #ff8c00;
+.label-kate {
+  top: 22px;
+  left: 12%;
+  transform: rotate(-4deg);
 }
 
-/* top right */
-.name-court {
-  top: 18px;
-  right: 150px;
-  color: #ff4f8b;
-  text-shadow:
-    0 0 8px #ff4f8b,
-    0 0 20px #ff4f8b,
-    0 0 45px #ff006e,
-    0 0 75px #ff006e;
+.label-court {
+  top: 22px;
+  right: 12%;
+  transform: rotate(4deg);
 }
 
-/* bottom left */
-.name-kat {
-  bottom: 18px;
-  left: 150px;
-  color: #68d8ff;
-  text-shadow:
-    0 0 8px #68d8ff,
-    0 0 20px #68d8ff,
-    0 0 45px #0096ff,
-    0 0 75px #0077ff;
+.label-kat {
+  bottom: 24px;
+  left: 13%;
+  transform: rotate(3deg);
 }
 
-/* bottom right */
-.name-reid {
-  bottom: 18px;
-  right: 160px;
-  color: #5cff8d;
-  text-shadow:
-    0 0 8px #5cff8d,
-    0 0 20px #5cff8d,
-    0 0 45px #00d26a,
-    0 0 75px #00b050;
+.label-reid {
+  bottom: 24px;
+  right: 13%;
+  transform: rotate(-3deg);
 }
 
 @media (max-width: 800px) {
   .meet-band-section {
-    padding: 70px 10px;
+    padding: 70px 10px 85px;
   }
 
-  .neon-heading {
-    font-size: clamp(3rem, 13vw, 5rem);
-    margin-bottom: 20px;
+  .meet-band-title {
+    font-size: clamp(2.8rem, 12vw, 5rem);
+    margin-bottom: 24px;
   }
 
-  .meet-band-wrap {
-    padding: 55px 10px 55px;
+  .meet-band-photo-wrap {
+    padding: 45px 5px 50px;
   }
 
-  .band-name {
-    font-size: clamp(1.4rem, 7vw, 2.4rem);
-    letter-spacing: 1px;
+  .member-label {
+    font-size: clamp(1.2rem, 6vw, 2.1rem);
+    -webkit-text-stroke: .5px rgba(255, 123, 84, 0.8);
   }
 
-  .name-kate {
+  .label-kate {
     top: 10px;
-    left: 20px;
+    left: 6%;
   }
 
-  .name-court {
+  .label-court {
     top: 10px;
-    right: 20px;
+    right: 6%;
   }
 
-  .name-kat {
+  .label-kat {
     bottom: 10px;
-    left: 25px;
+    left: 7%;
   }
 
-  .name-reid {
+  .label-reid {
     bottom: 10px;
-    right: 25px;
+    right: 7%;
   }
 }
