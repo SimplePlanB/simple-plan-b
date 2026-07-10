@@ -1120,7 +1120,6 @@ h1 {
 }
 
 @media (max-width: 480px) {
-
   .hero h1 {
     font-size: 34px;
   }
@@ -1136,6 +1135,8 @@ h1 {
   .topbar {
     position: static;
   }
+}
+
 /* ===== Meet The Band ===== */
 
 .meet-band-section {
@@ -1147,15 +1148,11 @@ h1 {
   max-width: 1400px;
   display: block;
   margin: 30px auto 0;
-
-  filter:
-    drop-shadow(0 20px 40px rgba(0,0,0,.45));
-
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.45));
   border-radius: 18px;
 }
 
 @media (max-width: 768px) {
-
   .meet-band-section {
     padding: 60px 10px 80px;
   }
@@ -1163,5 +1160,4 @@ h1 {
   .meet-band-photo {
     width: 100%;
   }
-
 }
