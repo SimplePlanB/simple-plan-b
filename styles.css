@@ -1189,3 +1189,50 @@ h1 {
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
+/* Featured Upcoming Show */
+
+.featured-show {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.featured-show .show-card {
+  width: 100%;
+  margin: 0;
+  border-radius: 18px 18px 0 0;
+  border-bottom: none;
+}
+
+.featured-show .promo-video {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.featured-show .promo-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 0 0 18px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: none;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .featured-show {
+    width: 100%;
+  }
+
+  .featured-show .show-card {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .featured-show .promo-video video {
+    border-radius: 0 0 16px 16px;
+  }
+}
